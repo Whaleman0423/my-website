@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YuRui's Bootcamp Application</title>
+    <style>
+        /* 全局樣式 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .article {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 20px;
+        }
+
+        .article h2 {
+            font-size: 1.8rem;
+            color: #34495e;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .article p,
+        .article ul {
+            font-size: 1rem;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        /* 表格樣式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        /* 圖片樣式 */
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        /* 超連結樣式 */
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 列表樣式 */
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* 區塊調整 */
+        .highlight {
+            background-color: #f3f8ff;
+            padding: 10px;
+            border-left: 5px solid #3498db;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        /* 特殊段落 */
+        .note {
+            color: #555;
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        /* 彈性樣式 */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 0.9rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .article h2 {
+                font-size: 1.5rem;
+            }
+
+            table th,
+            table td {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* 新增圖片大小控制 */
+        img {
+            width: 10%;
+            /* 設定圖片寬度為容器的50% */
+            height: 10%;
+            /* 保持圖片的原始高度 */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>YuRui's Bootcamp Application</h1>
+    <!-- 添加個人 asset 照片，置中並放大-->
+    <img src="assets/yurui.jpg" alt="YuRui" style="display: block; margin: 20px auto; width: 30%;">
+    <div class="article">
+        <h2>個人簡介</h2>
+        <p>
+            我是宇睿，今年27歲，畢業於國立東華大學經濟系，目前從事博弈業的 Flutter 軟體工程師。
+        </p>
+    </div>
+    <div class="article">
+        <h2>工作經歷</h2>
+        <table>
+            <tr>
+                <th>時間</th>
+                <th>公司</th>
+                <th>職位</th>
+                <th>工作內容</th>
+            </tr>
+            <tr>
+                <td>2024/8 ~ 仍在職</td>
+                <td>初陽科技有限公司</td>
+                <td>Flutter 軟體工程師</td>
+                <td>負責公司前端應用開發，專注於 Flutter 框架，與團隊合作完成多項專案。</td>
+            </tr>
+            <tr>
+                <td>2022/6 ~ 2024/8</td>
+                <td>緯育股份有限公司</td>
+                <td>GCP雲端 & Docker & LineBot 講師</td>
+                <td>
+                    教授雲端相關課程，包括 GCP 架構、資源管理、Docker 容器技術，並引導學員使用 LineBot 開發基礎 AI 系統。
+                </td>
+            </tr>
+            <tr>
+                <td>2022/4 ~ 2024/8</td>
+                <td>雲育鏈股份有限公司</td>
+                <td>全端開發工程師</td>
+                <td>
+                    進行軟體開發與雲端架構設計，串接前後端應用。主導專案規劃與內部培訓，並參與行銷製作及公司活動安排。
+                </td>
+            </tr>
+            <tr>
+                <td>2021/12 ~ 2022/3</td>
+                <td>雲育鏈</td>
+                <td>實習生</td>
+                <td>
+                    協助完成 Line 後端 API 開發，前端採用 Flutter，並進行人力資訊分析及自動化處理。
+                </td>
+            </tr>
+            <tr>
+                <td>2020/8 ~ 2020/12</td>
+                <td>臺灣新光商業銀行股份有限公司</td>
+                <td>金融理財專員</td>
+                <td>
+                    提供理財建議及資產配置，增進客戶信任並協助銀行提高業績。專注於分析市場及提升業務能力。
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="article">
+        <h2>申請 Wehelp Bootcamp 動機</h2>
+        <p>
+            一直想往 AI 相關的領域發展，但苦無門路，剛好看到 Wehelp 的課程，覺得非常適合我，希望能藉由這次的機會，學習 AI 相關的知識，並且在未來能夠成為一名優秀的軟體工程師。
+        </p>
+    </div>
+    <div class="article">
+        <h2>曾經做過哪些軟體工程技術相關的學習？若有作品請分享給我們。</h2>
+        <table>
+            <tr>
+                <th>分類</th>
+                <th>技能</th>
+            </tr>
+            <tr>
+                <td>程式語言</td>
+                <td>Python、Dart、Java、Swift</td>
+            </tr>
+            <tr>
+                <td>全端開發</td>
+                <td>Flutter 網頁與雙平台 App</td>
+            </tr>
+            <tr>
+                <td>雲端</td>
+                <td>GCP、AWS</td>
+            </tr>
+            <tr>
+                <td>DevOps</td>
+                <td>Git、GitHub、Docker</td>
+            </tr>
+            <tr>
+                <td>人工智慧</td>
+                <td>LLM、Langchain、embedding vector index searching</td>
+            </tr>
+            <tr>
+                <td>其他</td>
+                <td>LineBot、Linux</td>
+            </tr>
+        </table>
+    </div>
+    <div class="article">
+        <h2>相關作品</h2>
+        <h3>應用程式</h3>
+        <ul>
+            <li>
+                <strong>Flutter 博弈 App</strong>
+                <br>
+                <a href="https://www.canva.com/design/DAGWEdywLp8/JC5FltoZ8VKqgMHecPyqvg/view?utm_content=DAGWEdywLp8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0b953d1935"
+                    target="_blank">雷火</a>
+            </li>
+            <li>
+                <strong>Video AR App</strong>
+                <br>
+                <a href="https://apps.apple.com/tw/app/%E6%95%98%E5%B9%BBar/id6479727203" target="_blank">iOS 版</a>
+                |
+                <a href="https://play.google.com/store/apps/details?id=io.cxcxc.cxcxc_ar_app" target="_blank">Android
+                    版</a>
+            </li>
+            <li>
+                <strong>Cloud Master App</strong>
+                <br>
+                <a href="https://apps.apple.com/tw/app/%E9%9B%B2%E7%AB%AF%E5%A4%A7%E5%B8%AB/id6480115973"
+                    target="_blank">iOS 版</a>
+                |
+                <a href="https://play.google.com/store/apps/details?id=io.cxcxc.cloud_master_app&hl=zh_TW"
+                    target="_blank">Android 版</a>
+            </li>
+        </ul>
+        <h3>影片</h3>
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/watch?v=okH9J6g3VOM&t=17s" target="_blank">Flutter OCR</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=z-MB4to9jBo&t=851s" target="_blank">Flutter Firebase
+                    Storage</a>
+            </li>
+        </ul>
+    </div>
+    <div class="article">
+        <h2>出版作品</h2>
+        <!-- 點擊標題可前往書籍連結 -->
+        <h3><a href="https://www.books.com.tw/products/0010928302?srsltid=AfmBOopKJDhrkqrjPKw8x8scP0UwQCixb9pfjDr86SkTIJal_E0NdhSL"
+                target="_blank">《大話 Flutter 跨平台應用開發》</a></h3>
+        <!-- 圖片來源為本地 asset flutter-book.webp -->
+        <img src="assets/flutter-book.webp" alt="大話 Flutter 跨平台應用開發">
+        <p>
+            一本關於 Flutter 跨平台開發的指南，涵蓋 Dart 語言入門到 Flutter 框架的逐步深入學習，並附完整實例練習：
+        </p>
+        <ul>
+            <li>實例化學習：透過完整案例代碼複製實踐。</li>
+            <li>視覺化代碼邏輯：流程圖解清晰易懂。</li>
+            <li>重點與技巧提示：聚焦於學習直觀化。</li>
+            <li>針對性練習設計：增強技術與擴展應用範圍。</li>
+        </ul>
+    </div>
+    <div class="article">
+        <h2>如果參與這個訓練，會怎麼安排學習時間？</h2>
+        <!-- 表格呈現：星期、時間、內容 -->
+        <table>
+            <tr>
+                <th>平日/假日</th>
+                <th>時間</th>
+                <th>內容</th>
+            </tr>
+            <tr>
+                <td>平日</td>
+                <td>09:00 ~ 11:00、21:00 ~ 01:00</td>
+                <td>自我學習（12:00 ~ 21:00 上班）</td>
+            </tr>
+            <tr>
+                <td>假日</td>
+                <td>整天</td>
+                <td>自我學習</td>
+            </tr>
+        </table>
+    </div>
+    <div class="article">
+        <h2>軟體技術日新月異，如何確定選擇投入的領域是正確有回報的？</h2>
+        <p>
+            只要自己覺得有所成長，並常常更新履歷以保持競爭力，有所累積，就會一直有學習的動力，這就是回報。
+        </p>
+    </div>
+    <div class="article">
+        <h2>請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</h2>
+        <p>
+            學習焦慮，一天不讀書就不爽；多天不讀書，一直不爽。
+            解決方法：完成最緊急且最優先的事情，並且把握學習時間，最大化自己的時間價值
+        </p>
+    </div>
+    <div class="article">
+        <h2>關於這份申請網頁，分享一個開發時的技術心得。</h2>
+        <p>
+            製作這份學習網頁時，總會想要把頁面做得很好，但是對美術沒有天份，所以後來就決定用最簡單的排版，把重點放在內容上。
+            使用 GPT4 與 Cursor 的 AI 工具，讓我更有效率的完成這份申請網頁。
+        </p>
+    </div>
+    <div class="article">
+        <h2>如何看待自身工作和整個社會群體的連結關係？</h2>
+        <p>
+            工作是為了生活賺錢，讓自己與家人過得更好，只有當自己變得更好，就有更多能力去幫助家人甚至是社會群體。
+        </p>
+    </div>
+    <div class="article">
+        <h2>其他想要對我們說的事情？</h2>
+        <p>
+            感謝有這樣的平台讓更多人能夠學習，並且有機會改變自己的未來。
+            過去我也有過教學經驗，知道從事教學工作並不是這麼簡單，更需要有熱誠並且花費很多心力。
+        </p>
+    </div>
+</body>
+
+</html>
